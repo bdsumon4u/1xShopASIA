@@ -1,0 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@700&family=Black+Ops+One&family=Roboto&family=Special+Elite&family=Teko:wght@300&display=swap');
+
+.-top-3 {
+    top: -0.75rem;
+}
+
+.bg-crimson {
+    background-color: crimson;
+}
+.text-crimson {
+    color: crimson;
+}
+.bg-redish {
+    background-color: #f63854;
+}
+.text-redish {
+    color: #f63854;
+}
+
+.status {
+    font-family: 'Black Ops One', cursive;
+    font-style: italic;
+}
