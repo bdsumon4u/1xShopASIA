@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TopUpController;
+use App\Http\Controllers\WithdrawController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/topup', 'topups.index');
-Route::view('/withdraw', 'withdraws.index');
+Route::get('/topup', TopUpController::class);
+Route::get('/withdraw', WithdrawController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

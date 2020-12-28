@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/components/input-group.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RequestController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/instruction.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/instruction.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +175,7 @@
       <updated>1608781027988</updated>
       <workItem from="1608781036324" duration="1535000" />
       <workItem from="1609057640376" duration="22810000" />
-      <workItem from="1609130692726" duration="8089000" />
+      <workItem from="1609130692726" duration="10971000" />
     </task>
     <servers />
   </component>
