@@ -1,5 +1,5 @@
 <div class="flex">
-    <div class="flex flex-col items-center mr-4">
+    <div class="flex flex-col items-center mr-4 -mt-3">
         <div>
             <div class="flex items-center justify-center w-10 h-10 border rounded-md">
                 <svg class="w-4 text-white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
