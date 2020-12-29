@@ -2,20 +2,35 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class TopUpController extends RequestController
 {
+    public function rules()
+    {
+        if ($this->isMethod('GET')) {
+            return [];
+        }
+
+        return [
+            'player_id' => 'required|integer',
+            'currency' => 'required|string',
+            'amount' => 'required|integer',
+            'payment_method' => 'required|string',
+            'trx_id' => 'required|string',
+            'email' => 'nullable|email',
+        ];
+    }
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function __invoke(Request $request)
+    public function __invoke()
     {
-        if ($request->isMethod('GET')) {
+        if ($this->isMethod('GET')) {
             return view('topups.index');
         }
+
+        $data = $this->validationData();
+        dd($data);
     }
 }

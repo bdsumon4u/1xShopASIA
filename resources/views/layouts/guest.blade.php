@@ -26,7 +26,7 @@
             @include('welcome-header')
             <!-- Page Content -->
                 <main>
-                    <div style="min-height: calc(100vh - 8rem);">
+                    <div>
                         {{ $slot }}
                     </div>
                 </main>
@@ -99,7 +99,7 @@
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function(){
                 tail.select(".tail-select", {
-                    // descriptions: true
+                    descriptions: true
                 });
             });
         </script>
