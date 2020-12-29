@@ -9,7 +9,7 @@
                             <p class="mr-1 h-6 w-6 text-lg font-bold bg-redish text-white text-center rounded-md">2</p>
                             <strong>Select Currency</strong>
                         </h2>
-                        <select name="currency" id="currency" class="mt-2 w-64">
+                        <select name="currency" id="currency" class="tail-select mt-2 w-64">
                             <option value="USD">USD</option>
                             <option value="BDT">BDT</option>
                             <option value="EUR">EUR</option>
@@ -25,7 +25,7 @@
                             <p class="mr-1 h-6 w-6 text-lg font-bold bg-redish text-white text-center rounded-md">4</p>
                             <strong>Payment Method</strong>
                         </h2>
-                        <select name="currency" id="currency" class="mt-2 w-64">
+                        <select name="currency" id="currency" class="tail-select mt-2 w-64">
                             <option value="bKash">bKash</option>
                             <option value="Rocket">Rocket</option>
                             <option value="Nagad">Nagad</option>

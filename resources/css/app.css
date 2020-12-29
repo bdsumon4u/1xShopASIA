@@ -3,6 +3,15 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@700&family=Black+Ops+One&family=Roboto&family=Special+Elite&family=Teko:wght@300&display=swap');
 
+.dotted-bg {
+    background: linear-gradient(90deg, #161122 21px, transparent 1%) center, linear-gradient(#161122 21px, transparent 1%) center, #a799cc;
+    background-size: 22px 22px;
+}
+
+.roboto {
+    font-family: Roboto, sans-serif;
+}
+
 .-top-3 {
     top: -0.75rem;
 }

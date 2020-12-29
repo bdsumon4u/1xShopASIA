@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RequestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/columns.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/empty.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/export.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/loading.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/offline.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/options.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/pagination.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/tfoot.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/thead.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/table-component.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/1xshopasia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1xshopasia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/withdraw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome-header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome-header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +159,7 @@
       <path value="$PROJECT_DIR$/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/rappasoft/laravel-livewire-tables" />
     </include_path>
   </component>
   <component name="ProjectId" id="1m5QYdUdFWJGrCjcdcEFDcmeA2n" />
@@ -150,12 +172,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/withdraws" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/rappasoft/laravel-livewire-tables/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables" />
       <recent name="$PROJECT_DIR$/resources/views/withdraws" />
     </key>
   </component>
@@ -175,7 +198,8 @@
       <updated>1608781027988</updated>
       <workItem from="1608781036324" duration="1535000" />
       <workItem from="1609057640376" duration="22810000" />
-      <workItem from="1609130692726" duration="10971000" />
+      <workItem from="1609130692726" duration="29033000" />
+      <workItem from="1609215757569" duration="12841000" />
     </task>
     <servers />
   </component>

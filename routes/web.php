@@ -19,8 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/topup', TopUpController::class);
-Route::get('/withdraw', WithdrawController::class);
+Route::match(['get', 'post'], '/topup', TopUpController::class)->name('topup');
+Route::match(['get', 'post'], '/withdraw', WithdrawController::class)->name('withdraw');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

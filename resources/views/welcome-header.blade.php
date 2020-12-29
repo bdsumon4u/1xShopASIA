@@ -12,10 +12,10 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link class="font-bold text-redish" href="" :active="request()->routeIs('')">
+                    <x-jet-nav-link class="roboto italic font-bold text-redish" :href="route('topup')" :active="request()->routeIs('topup')">
                         {{ __('Top Up') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link class="font-bold text-redish" href="" :active="request()->routeIs('')">
+                    <x-jet-nav-link class="roboto italic font-bold text-redish" :href="route('withdraw')" :active="request()->routeIs('withdraw')">
                         {{ __('Withdraw') }}
                     </x-jet-nav-link>
                 </div>
@@ -41,10 +41,10 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link class="font-bold text-redish" href="" :active="request()->routeIs('')">
+            <x-jet-responsive-nav-link class="font-bold text-redish" :href="route('topup')" :active="request()->routeIs('topup')">
                 {{ __('Top Up') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link class="font-bold text-redish" href="" :active="request()->routeIs('')">
+            <x-jet-responsive-nav-link class="font-bold text-redish" :href="route('withdraw')" :active="request()->routeIs('withdraw')">
                 {{ __('Withdraw') }}
             </x-jet-responsive-nav-link>
         </div>
