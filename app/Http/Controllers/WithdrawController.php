@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Withdraw;
-use Illuminate\Http\Request;
-
 class WithdrawController extends RequestController
 {
     public function rules()
@@ -20,9 +17,10 @@ class WithdrawController extends RequestController
             'payment_method' => 'required|string',
             'payment_number' => 'required|string',
             'withdrawal_code' => 'required|string',
-            'email' => 'nullable',
+            'email' => 'nullable|email',
         ];
     }
+
     /**
      * Handle the incoming request.
      *

@@ -28,7 +28,7 @@
             <div class="grid gap-6 row-gap-10 lg:grid-cols-3">
                 <div class="lg:col-span-2 lg:py-6 lg:pr-16">
                     <x-instruction step="1">
-                        Go To <a class="text-redish font-bold italic underline" href="">Top Up</a> Page.
+                        Go To <x-a target="_blank" class="text-redish font-bold italic underline" :href="route('topup')">Top Up</x-a> Page.
                     </x-instruction>
                     <x-instruction step="2">Enter Your PlayerID.</x-instruction>
                     <x-instruction step="3">Select Currency.</x-instruction>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="lg:col-span-2 lg:py-6 lg:pl-16">
-                    <x-instruction step="1">Go To <a class="text-redish font-bold italic underline" href="">Withdraw</a>
+                    <x-instruction step="1">Go To <x-a target="_blank" class="text-redish font-bold italic underline" :href="route('withdraw')">Withdraw</x-a>
                         Page.
                     </x-instruction>
                     <x-instruction step="2">Enter Your PlayerID.</x-instruction>
@@ -122,7 +122,7 @@
             <div class="grid gap-6 row-gap-10 lg:grid-cols-3">
                 <div class="lg:col-span-2 lg:py-6 lg:pr-16">
                     <x-instruction step="1">
-                        Go To <a class="text-redish font-bold italic underline" href="">1xBetASIA</a> Website.
+                        Go To <a target="_blank" class="text-redish font-bold italic underline" href="https://1xbet.com">1xBetASIA</a> Website.
                     </x-instruction>
                     <x-instruction step="2">Go To Registration Page.</x-instruction>
                     <x-instruction step="3">Select Country.</x-instruction>

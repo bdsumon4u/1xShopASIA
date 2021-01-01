@@ -33,3 +33,16 @@
     font-family: 'Black Ops One', cursive;
     font-style: italic;
 }
+
+.ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 22px;
+    margin-right: -40px;
+    margin-top: 22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari prior 9.0 */
+    transform: rotate(45deg); /* Standard syntax */
+}

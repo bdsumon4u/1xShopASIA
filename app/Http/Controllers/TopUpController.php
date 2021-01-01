@@ -19,6 +19,7 @@ class TopUpController extends RequestController
             'email' => 'nullable|email',
         ];
     }
+
     /**
      * Handle the incoming request.
      *
