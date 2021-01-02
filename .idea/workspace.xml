@@ -5,22 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Livewire/TableComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/action.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/topups/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/withdraws/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Casts/Status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/States/Status.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/States/Status/Completed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/States/Status/Pending.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/States/Status/Returned.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopUpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WithdrawController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WithdrawController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Admin/TopUpsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/TopUpsTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Admin/WithdrawsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/WithdrawsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TopUpsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TopUpsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/WithdrawsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/WithdrawsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/TopUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TopUp.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Withdraw.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Withdraw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/topups/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/withdraws/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/columns.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/columns.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/data.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/loading.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/loading.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/options.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/options.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +166,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/rappasoft/laravel-livewire-tables" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-model-states" />
     </include_path>
   </component>
   <component name="ProjectId" id="1m5QYdUdFWJGrCjcdcEFDcmeA2n" />
@@ -174,17 +179,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Statuses" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Statuses" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables" />
       <recent name="$PROJECT_DIR$/resources/views/withdraws" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/States" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
     </key>
   </component>
@@ -209,6 +217,9 @@
       <workItem from="1609315491285" duration="6920000" />
       <workItem from="1609414748148" duration="3592000" />
       <workItem from="1609501328437" duration="19316000" />
+      <workItem from="1609526375694" duration="253000" />
+      <workItem from="1609558418479" duration="710000" />
+      <workItem from="1609559156298" duration="6116000" />
     </task>
     <servers />
   </component>

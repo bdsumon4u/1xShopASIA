@@ -1,9 +1,9 @@
 @if ($paginationEnabled || $searchEnabled)
-    <div class="bg-gray-200 p-2 flex justify-between items-center border-b">
+    <div class="bg-gray-200 py-2 px-3 flex justify-between items-center border-b">
         <div class="flex">
             @if ($paginationEnabled && count($perPageOptions))
                 <div class="flex-1">
-                    @lang('laravel-livewire-tables::strings.per_page'): &nbsp;
+                    <span class="hidden sm:inline">@lang('laravel-livewire-tables::strings.per_page'): &nbsp;</span>
 
                     <select wire:model="perPage" class="form-input bg-gray-50 focus:bg-white w-12 rounded-md transition ease-in-out duration-150 sm:text-sm sm:leading-5">
                         @foreach ($perPageOptions as $option)

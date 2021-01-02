@@ -1,5 +1,5 @@
 @if ($paginationEnabled)
-    <div class="bg-gray-200 p-2">
+    <div class="bg-gray-200 py-2 px-3">
         {{ $models->links() }}
         @if ($models->total() <= $models->perPage())
             @lang('laravel-livewire-tables::strings.results', [

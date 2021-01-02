@@ -4,7 +4,7 @@
             @if($column->isSortable())
                 <th
                     scope="col"
-                    class="p-3 bg-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider {{ $this->setTableHeadClass($column->getAttribute()) }}"
+                    class="text-center p-3 bg-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider {{ $this->setTableHeadClass($column->getAttribute()) }}"
                     id="{{ $this->setTableHeadId($column->getAttribute()) }}"
                     @foreach ($this->setTableHeadAttributes($column->getAttribute()) as $key => $value)
                     {{ $key }}="{{ $value }}"
@@ -24,7 +24,7 @@
                 </th>
             @else
                 <th
-                    class="p-3 bg-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider {{ $this->setTableHeadClass($column->getAttribute()) }}"
+                    class="text-center p-3 bg-gray-200 text-left text-xs font-medium text-gray-500 uppercase tracking-wider {{ $this->setTableHeadClass($column->getAttribute()) }}"
                     id="{{ $this->setTableHeadId($column->getAttribute()) }}"
                     @foreach ($this->setTableHeadAttributes($column->getAttribute()) as $key => $value)
                         {{ $key }}="{{ $value }}"

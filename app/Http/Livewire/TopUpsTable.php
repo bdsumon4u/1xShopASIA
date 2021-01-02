@@ -36,7 +36,10 @@ class TopUpsTable extends TableComponent
                 }),
             Column::make('Status')
                 ->searchable()
-                ->sortable(),
+                ->sortable()
+                ->format(function (TopUp $model) {
+                    return $this->html('<span class="'.$model->status->color().'">'.$model->status.'</span>');
+                }),
         ];
     }
 }

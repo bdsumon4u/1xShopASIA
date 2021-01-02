@@ -126,6 +126,12 @@
             <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.topups') }}" :active="request()->routeIs('admin.topups')">
+                {{ __('Top Ups') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.withdraws') }}" :active="request()->routeIs('admin.withdraws')">
+                {{ __('Withdraws') }}
+            </x-jet-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

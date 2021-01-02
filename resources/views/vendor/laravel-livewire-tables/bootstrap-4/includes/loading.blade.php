@@ -1,7 +1,7 @@
 @if ($loadingIndicator)
     <tbody wire:loading.class.remove="hidden" class="hidden">
         <tr>
-            <td colspan="{{ collect($columns)->count() }}">
+            <td class="px-3 py-2 font-bold" colspan="{{ collect($columns)->count() }}">
                 @lang('laravel-livewire-tables::strings.loading')
             </td>
         </tr>

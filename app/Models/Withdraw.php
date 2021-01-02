@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Status;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,6 +21,10 @@ class Withdraw extends Model
         'withdrawal_code',
         'email',
         'status',
+    ];
+
+    protected $casts = [
+        'status' => Status::class,
     ];
 
     public function setPaymentMethodAttribute($paymentMethod)

@@ -9,9 +9,16 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 
 class TopUpsTable extends TableComponent
 {
+    public $status;
+
+    public function mount($status = '')
+    {
+        $this->status = $status;
+    }
+
     public function query(): Builder
     {
-        return TopUp::query();
+        return $this->status ? TopUp::where('status', $this->status) : TopUp::query();
     }
 
     public function columns() : array
@@ -37,7 +44,10 @@ class TopUpsTable extends TableComponent
                 }),
             Column::make('Status')
                 ->searchable()
-                ->sortable(),
+                ->sortable()
+                ->format(function (TopUp $model) {
+                    return $this->html('<span class="'.$model->status->color().'">'.$model->status.'</span>');
+                }),
             Column::make('Action')
                 ->format(function (TopUp $model) {
                     return $this->html('<a class="py-2 px-3 md:px-4 rounded bg-teal-400 text-white font-bold hover:bg-teal-300" href="'.route('admin.topups.edit', $model).'">Edit</a>');

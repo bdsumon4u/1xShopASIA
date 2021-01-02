@@ -163,42 +163,24 @@
     </div>
 
     <div class="bg-white dotted-bg overflow-hidden shadow-md mb-1">
-        <div class="px-4 pt-16 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 lg:pb-10">
-            <div class="grid gap-6 row-gap-5 md:mx-10">
-                <h2 class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-400 sm:text-2xl" style="font-family: Audiowide">
-                    Recent Top Up-s
-                </h2>
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="flex flex-col">
-                    <div class="-my-2 overflow-x-auto sm:-mx-2 lg:-mx-4">
-                        <div class="py-2 align-middle inline-block min-w-full sm:px-2 lg:px-4">
-                            <div class="shadow overflow-hidden border border-gray-200 sm:rounded-md">
-                                <livewire:top-ups-table />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="px-2 md:px-0 pt-8 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 lg:pb-20">
+            <h2 class="mt-2 mb-3 text-xl leading-8 font-extrabold tracking-tight text-gray-300 sm:text-2xl" style="font-family: Audiowide">
+                Recent Top Up-s
+            </h2>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <livewire:top-ups-table />
             </div>
         </div>
     </div>
 
 
     <div class="bg-redish overflow-hidden shadow-md mt-1">
-        <div class="px-4 pt-8 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 lg:pb-20">
-            <div class="grid gap-6 row-gap-5 md:mx-10">
-                <h2 class="mt-2 text-xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-2xl" style="font-family: Audiowide">
-                    Recent Withdraw-s
-                </h2>
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="flex flex-col">
-                    <div class="-my-2 overflow-x-auto sm:-mx-2 lg:-mx-4">
-                        <div class="py-2 align-middle inline-block min-w-full sm:px-2 lg:px-4">
-                            <div class="shadow overflow-hidden border border-gray-200 sm:rounded-md">
-                                <livewire:withdraws-table />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="px-2 md:px-0 pt-8 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 lg:pb-20">
+            <h2 class="mt-2 mb-3 text-xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-2xl" style="font-family: Audiowide">
+                Recent Withdraw-s
+            </h2>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                <livewire:withdraws-table />
             </div>
         </div>
     </div>
