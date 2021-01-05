@@ -45,7 +45,7 @@ class GeneralSetting extends Component
             'tagline' => 'nullable|string|max:255',
         ]);
 
-        $data += [
+        $this->logo && $data += [
             'logo_path' => $this->logo->store('logo', 'public'),
         ];
 
