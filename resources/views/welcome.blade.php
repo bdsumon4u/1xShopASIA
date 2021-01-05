@@ -14,8 +14,7 @@
                             needed.</p>
                     </div>
                     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img class="object-cover object-center rounded" alt="hero"
-                             src="https://image.freepik.com/free-vector/financial-literacy-education-e-business-school-cryptocurrency-trading-courses-crypto-trade-academy-learn-how-trade-cryptocurrency-concept_335657-72.jpg">
+                        <img class="object-cover object-center rounded" alt="hero" src="{{ asset('images/cryptocurrency.jpg') }}">
                     </div>
                 </div>
             </section>

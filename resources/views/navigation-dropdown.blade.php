@@ -21,7 +21,25 @@
                     <x-jet-nav-link href="{{ route('admin.withdraws') }}" :active="request()->routeIs('admin.withdraws')">
                         {{ __('Withdraws') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
+                        {{ __('Settings') }}
+                    </x-jet-nav-link>
                 </div>
+            </div>
+
+            <div class="flex flex-1 align-center justify-end">
+                <!-- Toggle Button -->
+                <a href="" class="flex items-center mx-1">
+                    <!-- toggle -->
+                    <div class="relative">
+                        <!-- line -->
+                        <div class="w-15 h-6 bg-gray-200 rounded-md shadow-inner"></div>
+                        <!-- dot -->
+                        <div class="absolute w-8 h-6 bg-white rounded-md shadow inset-y-0 right-0 flex align-center justify-center bg-green-500 text-white">
+                            <strong>ON</strong>
+                        </div>
+                    </div>
+                </a>
             </div>
 
             <!-- Settings Dropdown -->
@@ -131,6 +149,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.withdraws') }}" :active="request()->routeIs('admin.withdraws')">
                 {{ __('Withdraws') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
+                {{ __('Settings') }}
             </x-jet-responsive-nav-link>
         </div>
 

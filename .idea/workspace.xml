@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Casts/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/States/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/States/Status/Completed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/States/Status/Pending.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/States/Status/Returned.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/settings/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/file-input.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/livewire-alert.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Admin/TopUpsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/TopUpsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Admin/WithdrawsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Admin/WithdrawsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TopUpsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TopUpsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/WithdrawsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/WithdrawsTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/TopUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TopUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Withdraw.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Withdraw.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/topups/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/withdraws/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/columns.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/columns.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/loading.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/loading.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/options.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables/bootstrap-4/includes/options.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input-group.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin-top-up-table.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome-header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome-header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,9 +175,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Statuses" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -192,6 +188,8 @@
       <recent name="$PROJECT_DIR$/resources/views/withdraws" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Livewire/Admin" />
+      <recent name="$PROJECT_DIR$/resources/views/livewire/admin" />
       <recent name="$PROJECT_DIR$/app/States" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Admin" />
     </key>
@@ -219,7 +217,10 @@
       <workItem from="1609501328437" duration="19316000" />
       <workItem from="1609526375694" duration="253000" />
       <workItem from="1609558418479" duration="710000" />
-      <workItem from="1609559156298" duration="6116000" />
+      <workItem from="1609559156298" duration="7155000" />
+      <workItem from="1609598610067" duration="4326000" />
+      <workItem from="1609667672763" duration="11446000" />
+      <workItem from="1609820079413" duration="21963000" />
     </task>
     <servers />
   </component>
@@ -237,5 +238,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

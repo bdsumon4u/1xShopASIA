@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ url('/') }}">
-                        <img src="https://cdn1.codashop.com/S/content/mobile/images/codashop-logo.png" class="block h-7 w-auto" />
+                        <img src="{{ app_logo() }}" class="block h-7 w-auto" />
                     </a>
                 </div>
 

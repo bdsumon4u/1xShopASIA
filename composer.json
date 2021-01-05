@@ -44,7 +44,10 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Hotash\\TallUiKit\\": "packages/hotash/tall-ui-kit/src/"
-        }
+        },
+        "files": [
+            "functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
