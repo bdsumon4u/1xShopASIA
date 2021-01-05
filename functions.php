@@ -4,7 +4,7 @@ use App\Models\Setting;
 
 if (! function_exists('setting')) {
     function setting(string $name, $default = null) {
-        return Setting::select('value')->whereName('logo_path')->first()->value ?? $default;
+        return Setting::select('value')->where(compact('name'))->first()->value ?? $default;
     }
 }
 

@@ -28,18 +28,16 @@
             </div>
 
             <div class="flex flex-1 align-center justify-end">
-                <!-- Toggle Button -->
-                <a href="" class="flex items-center mx-1">
-                    <!-- toggle -->
+                @php $status = setting('site_status') @endphp
+                <a href="{{ route('admin.site-status', $status == 'online' ? 'offline' : 'online') }}" class="flex items-center mx-1">
                     <div class="relative">
-                        <!-- line -->
                         <div class="w-15 h-6 bg-gray-200 rounded-md shadow-inner"></div>
-                        <!-- dot -->
-                        <div class="absolute w-8 h-6 bg-white rounded-md shadow inset-y-0 right-0 flex align-center justify-center bg-green-500 text-white">
-                            <strong>ON</strong>
+                        <div class="absolute w-10 h-6 bg-white rounded-md shadow inset-y-0 flex align-center justify-center {{ $status == 'online' ? 'bg-green-500 right-0' : 'bg-red-500 left-0' }} text-white">
+                            <strong>{{ $status == 'online' ? 'ON' : 'OFF' }}</strong>
                         </div>
                     </div>
                 </a>
+                @unset($status)
             </div>
 
             <!-- Settings Dropdown -->

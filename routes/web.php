@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\SiteStatusController;
 use App\Http\Controllers\Admin\TopUpController as AdminTopUpController;
 use App\Http\Controllers\Admin\UpdateTopUpController;
 use App\Http\Controllers\Admin\UpdateWithdrawController;
@@ -38,4 +39,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
     Route::match(['get', 'post'], '/withdraws/{withdraw}/edit', UpdateWithdrawController::class)->name('withdraws.edit');
 
     Route::get('/settings/{tab?}', SettingController::class)->name('settings');
+    Route::get('/site-status/{status}', SiteStatusController::class)->name('site-status');
 });

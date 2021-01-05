@@ -20,6 +20,7 @@ class SettingSeeder extends Seeder
                 'company_email' => 'mail@1xshopasia.com',
                 'logo_path' => 'logo/default.png',
                 'tagline' => 'The Best Way To Top Up Player ID in Batting Site 1xBetASIA.',
+                'site_status' => 'online',
             ])->map(function ($value, $name) {
                 return compact('value', 'name');
             })->toArray();

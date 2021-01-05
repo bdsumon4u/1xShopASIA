@@ -22,8 +22,9 @@
             </div>
 
             <!-- Settings Dropdown -->
-            <div class="hidden sm:flex sm:items-center sm:ml-6" x-data="{ status: 'online', online : true }">
-                <p class="status uppercase text-2xl" :class="{'text-green-500': online, 'text-red-500': !online}" x-text="status"></p>
+            <div class="hidden sm:flex sm:items-center sm:ml-6">
+                @php $status = setting('site_status', 'online') @endphp
+                <p class="status uppercase text-2xl {{ $status == 'online' ? 'text-green-500' : 'text-red-500' }}">{{ $status }}</p>
             </div>
 
             <!-- Hamburger -->
