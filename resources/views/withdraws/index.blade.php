@@ -42,9 +42,10 @@
                 </div>
                 <x-input-group step="5" name="withdrawal_code" />
                 <x-input-group step="6" name="email" />
-                <button type="submit" class="w-full rounded-md px-3 py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
+
+                <x-jet-button class="w-full justify-center mt-6 py-3">
                     Sell
-                </button>
+                </x-jet-button>
             </x-form>
         </div>
     </div>
