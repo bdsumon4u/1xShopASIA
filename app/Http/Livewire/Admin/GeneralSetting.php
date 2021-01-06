@@ -11,7 +11,7 @@ class GeneralSetting extends Component
     use WithFileUploads;
 
     public $names = [
-        'company_name', 'company_email', 'logo_path', 'tagline', 'demo'
+        'company_name', 'company_email', 'logo_path', 'tagline',
     ];
 
     public $company_name;

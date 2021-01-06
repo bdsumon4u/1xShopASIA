@@ -21,6 +21,10 @@ class SettingSeeder extends Seeder
                 'logo_path' => 'logo/default.png',
                 'tagline' => 'The Best Way To Top Up Player ID in Batting Site 1xBetASIA.',
                 'site_status' => 'online',
+                'facebook_url' => '#',
+                'twitter_url' => '#',
+                'instagram_url' => '#',
+                'youtube_url' => '#',
             ])->map(function ($value, $name) {
                 return compact('value', 'name');
             })->toArray();
