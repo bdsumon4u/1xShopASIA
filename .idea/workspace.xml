@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/action.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/action.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin/general-setting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/admin/general-setting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/admin/social-setting.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/admin/social-setting.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,6 @@
       <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
       <path value="$PROJECT_DIR$/vendor/rappasoft/laravel-livewire-tables" />
-      <path value="$PROJECT_DIR$/vendor/spatie/laravel-model-states" />
     </include_path>
   </component>
   <component name="ProjectId" id="1m5QYdUdFWJGrCjcdcEFDcmeA2n" />
