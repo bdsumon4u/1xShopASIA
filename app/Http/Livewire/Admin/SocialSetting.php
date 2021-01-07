@@ -3,6 +3,7 @@
 namespace App\Http\Livewire\Admin;
 
 use App\Models\Setting;
+use Illuminate\Support\Facades\Cache;
 use Livewire\Component;
 
 class SocialSetting extends Component
@@ -58,7 +59,10 @@ class SocialSetting extends Component
         $data = $this->validate($rules);
 
         foreach ($data as $name => $value) {
-            Setting::where(compact('name'))->update(compact('value'));
+            $updated = Setting::where(compact('name'))->update(compact('value'));
+            if ($updated) {
+                Cache::put('settings.'.$name, $value);
+            }
         }
 
         $this->emit('updated');

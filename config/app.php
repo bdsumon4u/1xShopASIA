@@ -167,7 +167,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Hotash\TallUiKit\Providers\TallUiKitServiceProvider::class,
 
         /*
          * Application Service Providers...
