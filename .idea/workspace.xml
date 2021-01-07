@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/SettingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SettingSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/action.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/action.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

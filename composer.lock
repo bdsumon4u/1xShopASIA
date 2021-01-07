@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d03287b858bea102218b364c165818a",
+    "content-hash": "058c502f94b3b3e08a6da723a5479d8d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1075,15 +1075,22 @@
         {
             "name": "hotash/tall-ui-kit",
             "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "packages/hotash/tall-ui-kit",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bdsumon4u/tall-ui-kit.git",
                 "reference": "43f587b65a41ef9e026854e0a2a264cbffec937e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bdsumon4u/tall-ui-kit/zipball/43f587b65a41ef9e026854e0a2a264cbffec937e",
+                "reference": "43f587b65a41ef9e026854e0a2a264cbffec937e",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^8.0",
                 "illuminate/view": "^8.0"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1097,11 +1104,7 @@
                     "Hotash\\TallUiKit\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "HotashPRO"
             ],
@@ -1113,13 +1116,15 @@
             ],
             "description": "Tailwind, Alpine.js, Laravel, Livewire - UI Kit.",
             "keywords": [
-                "Blade",
-                "Laravel",
-                "Laravel UI"
+                "blade",
+                "laravel",
+                "laravel ui"
             ],
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/bdsumon4u/tall-ui-kit/issues",
+                "source": "https://github.com/bdsumon4u/tall-ui-kit/tree/master"
+            },
+            "time": "2020-12-29T16:07:27+00:00"
         },
         {
             "name": "jaybizzle/crawler-detect",
