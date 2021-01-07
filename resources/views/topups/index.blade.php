@@ -11,9 +11,9 @@
                                 <label for="currency">Select Currency</label>
                             </h2>
                             <select name="currency" id="currency" class="tail-select mt-2 w-64">
-                                <option value="USD">USD</option>
-                                <option value="BDT">BDT</option>
-                                <option value="EUR">EUR</option>
+                                @foreach(explode(',', setting('currencies')) as $currency)
+                                <option value="{{ $currency }}">{{ $currency }}</option>
+                                @endforeach
                             </select>
                             <x-error name="currency" />
                         </div>
@@ -29,10 +29,11 @@
                                 <p class="mr-1 h-6 w-6 text-lg font-bold bg-redish text-white text-center rounded-md">4</p>
                                 <label for="payment-method">Payment Method</label>
                             </h2>
+                            @inject('payment', 'App\Http\Livewire\Admin\PaymentSetting')
                             <select name="payment_method" id="payment-method" class="tail-select mt-2 w-64">
-                                <option data-description="01624093099" value="bKash">bKash</option>
-                                <option data-description="01535925715" value="Rocket">Rocket</option>
-                                <option data-description="01783110247" value="Nagad">Nagad</option>
+                                @foreach($payment->toArr() as $name => $number)
+                                <option data-description="{{ $number }}" value="{{ $name }}">{{ $name }}</option>
+                                @endforeach
                             </select>
                             <x-error name="payment_method" />
                         </div>

@@ -25,6 +25,15 @@ class SettingSeeder extends Seeder
                 'twitter_url' => '#',
                 'instagram_url' => '#',
                 'youtube_url' => '#',
+                'currencies' => '',
+                'bkash_number' => '',
+                'rocket_number' => '',
+                'nagad_number' => '',
+                'neteller_number' => '',
+                'skrill_number' => '',
+                'payeer_number' => '',
+                'perfect_money_number' => '',
+                'btc_number' => '',
             ])->map(function ($value, $name) {
                 return compact('value', 'name');
             })->toArray();

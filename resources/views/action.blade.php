@@ -26,9 +26,9 @@
                                 <x-label class="text-redish font-bold" for="currency">Select Currency</x-label>
                             </h2>
                             <select name="currency" id="currency" class="tail-select mt-2 w-64">
-                                <option value="USD" @if($model->currency == 'USD') selected @endif>USD</option>
-                                <option value="BDT" @if($model->currency == 'BDT') selected @endif>BDT</option>
-                                <option value="EUR" @if($model->currency == 'EUR') selected @endif>EUR</option>
+                                @foreach(explode(',', setting('currencies')) as $currency)
+                                    <option value="{{ $currency }}" @if ($currency == $model->currency) selected @endif>{{ $currency }}</option>
+                                @endforeach
                             </select>
                             <x-error name="currency" />
                         </div>
@@ -51,10 +51,11 @@
                             <h2 class="flex bg-white py-1 px-2 rounded-md absolute left-0 -top-3">
                                 <x-label class="text-redish font-bold" for="payment-method">Payment Method</x-label>
                             </h2>
+                            @inject('payment', 'App\Http\Livewire\Admin\PaymentSetting')
                             <select name="payment_method" id="payment-method" class="tail-select mt-2 w-64">
-                                <option value="bKash" @if($model->payment_method == 'bKash') selected @endif>bKash</option>
-                                <option value="Rocket" @if($model->payment_method == 'Rocket') selected @endif>Rocket</option>
-                                <option value="Nagad" @if($model->payment_method == 'Nagad') selected @endif>Nagad</option>
+                                @foreach($payment->toArr() as $name => $number)
+                                    <option @if($model->getTable() != 'withdraws') data-description="{{ $number }}" @endif value="{{ $name }}" @if($name == $model->payment_method) selected @endif>{{ $name }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
