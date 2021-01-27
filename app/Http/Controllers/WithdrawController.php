@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Notice;
+
 class WithdrawController extends RequestController
 {
     public function rules()
@@ -29,7 +31,9 @@ class WithdrawController extends RequestController
     public function __invoke()
     {
         if ($this->isMethod('GET')) {
-            return view('withdraws.index');
+            return view('withdraws.index', [
+                'notices' => Notice::where('type', 'withdraw')->latest('id')->get(),
+            ]);
         }
 
         $data = $this->validationData();

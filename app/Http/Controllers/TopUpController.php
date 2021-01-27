@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Notice;
+
 class TopUpController extends RequestController
 {
     public function rules()
@@ -28,7 +30,9 @@ class TopUpController extends RequestController
     public function __invoke()
     {
         if ($this->isMethod('GET')) {
-            return view('topups.index');
+            return view('topups.index', [
+                'notices' => Notice::where('type', 'top-up')->latest('id')->get(),
+            ]);
         }
 
         $data = $this->validationData();

@@ -21,6 +21,9 @@
                     <x-jet-nav-link href="{{ route('admin.withdraws') }}" :active="request()->routeIs('admin.withdraws')">
                         {{ __('Withdraws') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.notices.index') }}" :active="request()->routeIs('admin.notices.index')">
+                        {{ __('Notices') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
                         {{ __('Settings') }}
                     </x-jet-nav-link>
@@ -147,6 +150,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.withdraws') }}" :active="request()->routeIs('admin.withdraws')">
                 {{ __('Withdraws') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.notices.index') }}" :active="request()->routeIs('admin.notices.index')">
+                {{ __('Notices') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
                 {{ __('Settings') }}

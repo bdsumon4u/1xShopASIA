@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\TopUpController as AdminTopUpController;
 use App\Http\Controllers\Admin\UpdateTopUpController;
 use App\Http\Controllers\Admin\UpdateWithdrawController;
 use App\Http\Controllers\Admin\WithdrawController as AdminWithdrawController;
+use App\Http\Controllers\Admin\NoticeController;
 use App\Http\Controllers\TopUpController;
 use App\Http\Controllers\WithdrawController;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +38,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
     Route::match(['get', 'post'], '/topups/{topup}/edit', UpdateTopUpController::class)->name('topups.edit');
     Route::match(['get', 'post'], '/withdraws', AdminWithdrawController::class)->name('withdraws');
     Route::match(['get', 'post'], '/withdraws/{withdraw}/edit', UpdateWithdrawController::class)->name('withdraws.edit');
+
+    Route::resources([
+        'notices' => NoticeController::class,
+    ]);
 
     Route::get('/settings/{tab?}', SettingController::class)->name('settings');
     Route::get('/site-status/{status}', SiteStatusController::class)->name('site-status');

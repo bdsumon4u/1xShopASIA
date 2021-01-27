@@ -13,7 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
         <link rel="stylesheet" href="https://unpkg.com/tail.select@0.5.15/css/default/tail.select-light.min.css">
-
+        @stack('styles')
         @livewireStyles
 
         <!-- Scripts -->
@@ -41,5 +41,6 @@
             });
         </script>
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>

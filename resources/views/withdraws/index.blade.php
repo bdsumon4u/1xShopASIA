@@ -1,6 +1,7 @@
 <x-guest-layout>
     <div class="overflow-hidden shadow-md">
         <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <x-notice-board :notices="$notices" />
             <x-form class="md:max-w-xl mx-auto" :action="route('withdraw')" method="POST">
                 <x-input-group step="1" name="player_id" />
                 <div class="flex flex-wrap md:-mx-2">
