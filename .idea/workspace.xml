@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/notices/editor.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/notices/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/notice-board.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/1xshopasia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/1xshopasia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopUpController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopUpController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WithdrawController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WithdrawController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/guest.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topups/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/withdraws/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/notices/editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/notices/editor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/notices/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/notices/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/notice-board.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/notice-board.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +181,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -239,6 +229,8 @@
       <workItem from="1609866950201" duration="3697000" />
       <workItem from="1609900173701" duration="3141000" />
       <workItem from="1611719407116" duration="16760000" />
+      <workItem from="1612244191894" duration="2902000" />
+      <workItem from="1612248779114" duration="4067000" />
     </task>
     <servers />
   </component>
@@ -256,6 +248,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/packages/hotash/tall-ui-kit" />
+    </ignored-roots>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

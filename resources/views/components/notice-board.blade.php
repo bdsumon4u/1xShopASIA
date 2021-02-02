@@ -8,7 +8,7 @@
             <div class="flex flex-col flex-grow self-center py-3">
                 <h4 class="font-bold text-gray-200">{{ $notice->title }}</h4>
                 <hr class="my-2 border-gray-200">
-                <div class="text-gray-200 font-bold">
+                <div class="text-gray-200">
                     {!! $notice->content !!}
                 </div>
             </div>
