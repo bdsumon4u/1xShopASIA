@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\UpdateTopUpController;
 use App\Http\Controllers\Admin\UpdateWithdrawController;
 use App\Http\Controllers\Admin\WithdrawController as AdminWithdrawController;
 use App\Http\Controllers\Admin\NoticeController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\TopUpController;
 use App\Http\Controllers\WithdrawController;
 use Illuminate\Support\Facades\Route;
@@ -28,6 +29,7 @@ Route::get('/', function () {
 
 Route::match(['get', 'post'], '/topup', TopUpController::class)->name('topup');
 Route::match(['get', 'post'], '/withdraw', WithdrawController::class)->name('withdraw');
+Route::match(['get', 'post'], '/contact-us', ContactController::class)->name('contact-us');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

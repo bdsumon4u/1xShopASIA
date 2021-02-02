@@ -18,6 +18,9 @@
                     <x-jet-nav-link class="roboto italic font-bold text-redish" :href="route('withdraw')" :active="request()->routeIs('withdraw')">
                         {{ __('Withdraw') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link class="roboto italic font-bold text-redish" :href="route('contact-us')" :active="request()->routeIs('contact-us')">
+                        {{ __('Contact Us') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -47,6 +50,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link class="font-bold text-redish" :href="route('withdraw')" :active="request()->routeIs('withdraw')">
                 {{ __('Withdraw') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link class="roboto italic font-bold text-redish" :href="route('contact-us')" :active="request()->routeIs('contact-us')">
+                {{ __('Contact Us') }}
             </x-jet-responsive-nav-link>
         </div>
     </div>
