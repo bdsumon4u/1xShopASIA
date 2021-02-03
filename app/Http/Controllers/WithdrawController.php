@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Notice;
+use App\Models\Withdraw;
 
 class WithdrawController extends RequestController
 {
@@ -23,6 +24,13 @@ class WithdrawController extends RequestController
         ];
     }
 
+    public function prepareForValidation()
+    {
+        $this->merge([
+            'status' => 'pending',
+        ]);
+    }
+
     /**
      * Handle the incoming request.
      *
@@ -36,7 +44,8 @@ class WithdrawController extends RequestController
             ]);
         }
 
-        $data = $this->validationData();
-        dd($data);
+        Withdraw::create($this->validationData());
+
+        return back()->with('success', 'Withdraw Request Received.');
     }
 }

@@ -30,8 +30,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('{page:slug}', PageViewController::class)->name('page');
-
 Route::match(['get', 'post'], '/topup', TopUpController::class)->name('topup');
 Route::match(['get', 'post'], '/withdraw', WithdrawController::class)->name('withdraw');
 Route::match(['get', 'post'], '/contact-us', ContactController::class)->name('contact-us');
@@ -54,3 +52,5 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
     Route::get('/settings/{tab?}', SettingController::class)->name('settings');
     Route::get('/site-status/{status}', SiteStatusController::class)->name('site-status');
 });
+
+Route::get('{page:slug}', PageViewController::class)->name('page');

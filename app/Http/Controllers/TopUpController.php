@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Notice;
+use App\Models\TopUp;
 
 class TopUpController extends RequestController
 {
@@ -22,6 +23,13 @@ class TopUpController extends RequestController
         ];
     }
 
+    public function prepareForValidation()
+    {
+        $this->merge([
+            'status' => 'pending',
+        ]);
+    }
+
     /**
      * Handle the incoming request.
      *
@@ -35,7 +43,8 @@ class TopUpController extends RequestController
             ]);
         }
 
-        $data = $this->validationData();
-        dd($data);
+        TopUp::create($this->validationData());
+
+        return back()->with('success', 'TopUp Request Received.');
     }
 }

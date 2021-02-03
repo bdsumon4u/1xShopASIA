@@ -27,7 +27,9 @@
                             </h2>
                             <select name="currency" id="currency" class="tail-select mt-2 w-64">
                                 @foreach(explode(',', setting('currencies')) as $currency)
-                                    <option value="{{ $currency }}" @if ($currency == $model->currency) selected @endif>{{ $currency }}</option>
+                                    @if($currency = trim($currency))
+                                        <option value="{{ $currency }}" @if (old('currency', $model->currency) == $currency) selected @endif>{{ $currency }}</option>
+                                    @endif
                                 @endforeach
                             </select>
                             <x-error name="currency" />
@@ -54,7 +56,7 @@
                             @inject('payment', 'App\Http\Livewire\Admin\PaymentSetting')
                             <select name="payment_method" id="payment-method" class="tail-select mt-2 w-64">
                                 @foreach($payment->toArr() as $name => $number)
-                                    <option @if($model->getTable() != 'withdraws') data-description="{{ $number }}" @endif value="{{ $name }}" @if($name == $model->payment_method) selected @endif>{{ $name }}</option>
+                                    <option @if($model->getTable() != 'withdraws') data-description="{{ $number }}" @endif value="{{ $name }}" @if(old('payment_method', $model->payment_method) == $name) selected @endif>{{ $name }}</option>
                                 @endforeach
                             </select>
                         </div>

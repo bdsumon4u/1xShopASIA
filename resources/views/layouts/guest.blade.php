@@ -26,6 +26,7 @@
             @include('welcome-header')
             <!-- Page Content -->
                 <main>
+                    <x-alerts />
                     <div>
                         {{ $slot }}
                     </div>
