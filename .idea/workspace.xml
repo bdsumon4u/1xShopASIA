@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19eb1435-ae78-47ba-b256-7a79c6f2397b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/editor.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/pages/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/notices/editor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/notices/editor.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome-footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome-footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +183,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/admin/pages" />
       <recent name="$PROJECT_DIR$/app/Statuses" />
       <recent name="$PROJECT_DIR$/resources/views/admin" />
       <recent name="$PROJECT_DIR$/resources/views/vendor/laravel-livewire-tables" />
@@ -227,7 +236,8 @@
       <workItem from="1611719407116" duration="16760000" />
       <workItem from="1612244191894" duration="2902000" />
       <workItem from="1612248779114" duration="7601000" />
-      <workItem from="1612324171516" duration="817000" />
+      <workItem from="1612324171516" duration="3119000" />
+      <workItem from="1612335631198" duration="8078000" />
     </task>
     <servers />
   </component>

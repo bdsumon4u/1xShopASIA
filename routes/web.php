@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SiteStatusController;
 use App\Http\Controllers\Admin\TopUpController as AdminTopUpController;
@@ -8,8 +9,10 @@ use App\Http\Controllers\Admin\UpdateWithdrawController;
 use App\Http\Controllers\Admin\WithdrawController as AdminWithdrawController;
 use App\Http\Controllers\Admin\NoticeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PageViewController;
 use App\Http\Controllers\TopUpController;
 use App\Http\Controllers\WithdrawController;
+use App\Models\Page;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +30,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('{page:slug}', PageViewController::class)->name('page');
+
 Route::match(['get', 'post'], '/topup', TopUpController::class)->name('topup');
 Route::match(['get', 'post'], '/withdraw', WithdrawController::class)->name('withdraw');
 Route::match(['get', 'post'], '/contact-us', ContactController::class)->name('contact-us');
@@ -43,6 +48,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
 
     Route::resources([
         'notices' => NoticeController::class,
+        'pages' => PageController::class,
     ]);
 
     Route::get('/settings/{tab?}', SettingController::class)->name('settings');

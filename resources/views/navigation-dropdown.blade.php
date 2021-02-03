@@ -24,6 +24,9 @@
                     <x-jet-nav-link href="{{ route('admin.notices.index') }}" :active="request()->routeIs('admin.notices.index')">
                         {{ __('Notices') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.pages.index') }}" :active="request()->routeIs('admin.pages.index')">
+                        {{ __('Pages') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
                         {{ __('Settings') }}
                     </x-jet-nav-link>
@@ -153,6 +156,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.notices.index') }}" :active="request()->routeIs('admin.notices.index')">
                 {{ __('Notices') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('admin.pages.index') }}" :active="request()->routeIs('admin.pages.index')">
+                {{ __('Pages') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('admin.settings') }}" :active="request()->routeIs('admin.settings')">
                 {{ __('Settings') }}

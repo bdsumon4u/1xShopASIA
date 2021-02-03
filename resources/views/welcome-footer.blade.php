@@ -16,18 +16,11 @@
             <div class="md:w-1/4 w-full px-4">
                 <h2 class="title-font font-medium text-gray-900 tracking-widest font-bold mb-3">Need Help?</h2>
                 <nav class="list-none mb-10">
+                    @foreach($pages as $page)
                     <li>
-                        <a class="text-gray-600 hover:text-gray-800">First Link</a>
+                        <x-a :href="route('page', $page)" class="text-gray-600 hover:text-gray-800 hover:underline">{{ $page->title }}</x-a>
                     </li>
-                    <li>
-                        <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-                    </li>
-                    <li>
-                        <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-                    </li>
+                    @endforeach
                 </nav>
             </div>
         </div>
