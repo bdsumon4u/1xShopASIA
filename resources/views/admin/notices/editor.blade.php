@@ -49,7 +49,7 @@
         </div>
     </div>
     @push('scripts')
-        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+        <script src="https://cdn.tiny.cloud/1/ykrvwmdno3ukmq6xvcdhwkf41l3o5y5ofw38s2k0dp2ema9i/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         <script>
             var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
